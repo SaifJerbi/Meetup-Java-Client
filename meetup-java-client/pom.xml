@@ -14,7 +14,7 @@
 	<groupId>meetup-java-client</groupId>
 	<artifactId>meetup-java-client</artifactId>
 	<packaging>jar</packaging>
-	<version>0.1-SNAPSHOT</version>
+	<version>1.0.0</version>
 	<description>Java client for Meetup.com API</description>
 	<organization>
 		<name>Vaadin Tunis</name>
@@ -27,6 +27,10 @@
 	</issueManagement>
 
 	<distributionManagement>
+		<snapshotRepository>
+			<id>ossrh</id>
+			<url>https://oss.sonatype.org/content/repositories/snapshots</url>
+		</snapshotRepository>
 	</distributionManagement>
 
 	<scm>
@@ -81,6 +85,18 @@
 	</dependencies>
 
 	<build>
+		<plugin>
+			<groupId>org.sonatype.plugins</groupId>
+			<artifactId>nexus-staging-maven-plugin</artifactId>
+			<version>1.6.3</version>
+			<extensions>true</extensions>
+			<configuration>
+				<serverId>ossrh</serverId>
+				<nexusUrl>https://oss.sonatype.org/</nexusUrl>
+				<autoReleaseAfterClose>true</autoReleaseAfterClose>
+			</configuration>
+		</plugin>
+
 		<sourceDirectory>${basedir}/src/main</sourceDirectory>
 		<plugins>
 			<plugin>
