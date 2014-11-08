@@ -26,14 +26,21 @@
 		<url>https://github.com/SaifJerbi/Meetup-Java-Client/issues</url>
 	</issueManagement>
 
+	<repositories>
+		<repository>
+			<id>SaifJerbi-releases</id>
+			<url>https://raw.githubusercontent.com/SaifJerbi/mvn-repo/master/releases</url>
+		</repository>
+	</repositories>
+
 	<distributionManagement>
 		<repository>
 			<id>repo</id>
-			<url>https://github.com/SaifJerbi/mvn-repo.git/releases</url>
+			<url>https://github.com/SaifJerbi/mvn-repo.git/raw/master/releases</url>
 		</repository>
 		<snapshotRepository>
 			<id>snapshot-repo</id>
-			<url>https://github.com/SaifJerbi/mvn-repo.git/snapshots</url>
+			<url>https://github.com/SaifJerbi/mvn-repo.git/raw/master/snapshots</url>
 		</snapshotRepository>
 	</distributionManagement>
 
@@ -129,22 +136,4 @@
 		</plugins>
 
 	</build>
-
-	<reporting>
-		<plugins>
-			<plugin>
-				<groupId>org.apache.maven.plugins</groupId>
-				<artifactId>maven-project-info-reports-plugin</artifactId>
-			</plugin>
-			<plugin>
-				<groupId>org.apache.maven.plugins</groupId>
-				<artifactId>maven-javadoc-plugin</artifactId>
-			</plugin>
-			<plugin>
-				<groupId>org.apache.maven.plugins</groupId>
-				<artifactId>maven-jxr-plugin</artifactId>
-			</plugin>
-		</plugins>
-	</reporting>
-
 </project>
