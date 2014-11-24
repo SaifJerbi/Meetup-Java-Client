@@ -26,10 +26,16 @@ public class EventSearchCriteria {
 	private OrderBy orderBy;
 
 	private Map<String, String> parameters;
+	
+		
+	public EventSearchCriteria() {
+		
+	}
 
 	public EventSearchCriteria(SearchCriteria<Event> searchCriteria) {
 		parameters = searchCriteria.getParameters();
 	}
+
 
 	public String getZipCode() {
 		return zipCode;
