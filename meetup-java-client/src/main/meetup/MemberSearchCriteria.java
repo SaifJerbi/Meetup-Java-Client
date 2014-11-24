@@ -8,7 +8,19 @@ public class MemberSearchCriteria {
 	private String group_id;
 	private String group_urlname;
 
+	private Map<String, String> parameters;
+
+	public MemberSearchCriteria() {
+	}
+
+	public MemberSearchCriteria(SearchCriteria<Member> searchCriteria) {
+		parameters = searchCriteria.getParameters();
+	}
+
 	public Map<String, String> getParameterMap() {
+		if (parameters != null && !parameters.isEmpty()) {
+			return parameters;
+		}
 
 		Map<String, String> m = new HashMap<String, String>();
 		if (getMember_id() != null)
