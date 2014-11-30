@@ -13,8 +13,8 @@
 	<url>https://github.com/Vaadin-Tunis-Meetup-Group/Meetup-Java-Client</url>
 	<groupId>meetup-java-client</groupId>
 	<artifactId>meetup-java-client</artifactId>
-	<packaging>war</packaging>
-	<version>1.0.0</version>
+	<packaging>jar</packaging>
+	<version>1.0.1</version>
 	<description>Java client for Meetup.com API</description>
 	<organization>
 		<name>Vaadin Tunis</name>
