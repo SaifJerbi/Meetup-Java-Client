@@ -14,7 +14,7 @@
 	<groupId>meetup-java-client</groupId>
 	<artifactId>meetup-java-client</artifactId>
 	<packaging>jar</packaging>
-	<version>1.0.0</version>
+	<version>1.0.1</version>
 	<description>Java client for Meetup.com API</description>
 	<organization>
 		<name>Vaadin Tunis</name>
