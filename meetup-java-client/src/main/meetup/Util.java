@@ -30,7 +30,7 @@ public class Util {
 
 			return c;
 		} catch (ParseException e) {
-
+			System.err.println(e);
 		}
 		c.setTime(new Date());
 		return c;

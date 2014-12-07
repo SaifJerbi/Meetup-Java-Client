@@ -9,6 +9,11 @@ public class TopicSearchCriteria {
 	private String search;
 	private Map<String, String> parameters;
 
+	
+	public TopicSearchCriteria() {
+
+	}
+	
 	public TopicSearchCriteria(SearchCriteria<Topic> searchCriteria) {
 		parameters = searchCriteria.getParameters();
 	}
